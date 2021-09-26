@@ -1,4 +1,29 @@
 *{
     margin:0;
     padding: 0;
+    font-family: 'poppins';
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Upload Image';
+    display: inline-block;
+    border: 1.5px solid #999;
+    border-radius: 3px;
+    padding: 5px 70px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 10pt;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }

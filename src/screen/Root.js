@@ -20,10 +20,10 @@ export default function Root() {
         <div>
             <main>
                 <Switch>
-                    <Route path="/" exact component={Cashier}></Route>
+                    <Route path="/" exact component={Login}></Route>
+                    <Route path="/cashier" component={Cashier}></Route>
                     <Route path="/add-item" component={AddItem}></Route>
                     <Route path="/item-list" component={ItemList}></Route>
-                    <Route path="/login" component={Login}></Route>
                     <Route path="/history" component={History}></Route>
                     <Route path="/" component={NotFound}></Route>
                 </Switch>
